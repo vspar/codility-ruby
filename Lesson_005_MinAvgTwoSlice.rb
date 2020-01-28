@@ -85,4 +85,4 @@ puts "#{result}, pass: #{result == 0}"
 result = MinAvgTwoSlice.solution([7, 6, 5, 4, 3, 2, 1])
 puts "#{result}, pass: #{result == 5}"
 
-# TESTED AND PASSED ON Codility (both solutions)
+# TESTED AND PASSED ON Codility - 100% on everything but there are faster solutions without using the prefix sums method
