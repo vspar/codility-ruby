@@ -4,7 +4,7 @@ class MaxProductOfThree
     # negative numbers makes this tricky because of multiplication rules, e.g. (-5 * -5) = +25
     a.sort!
     len = a.size
-    # compare products of top 3 numbers and bottom 3 numbers (which may be negative)
+    # compare products: top 3 numbers, and top number and bottom 2 numbers (which may be negative)
     p_pos = a[len-1] * a[len-2] * a[len-3]
     p_neg = a[len-1] * a[0] * a[1] # a pair of -ve numbers may make a larger product
     return p_pos > p_neg ? p_pos : p_neg
